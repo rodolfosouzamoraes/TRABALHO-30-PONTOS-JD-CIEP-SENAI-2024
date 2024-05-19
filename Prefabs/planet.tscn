@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://duotu5f2xirjr"]
+
+[ext_resource type="Texture2D" uid="uid://120e08wwnlfy" path="res://Sprites/planet03.png" id="1_i08ip"]
+[ext_resource type="Script" path="res://Scripts/Nave.cs" id="2_8qytw"]
+[ext_resource type="Texture2D" uid="uid://d1r6r1aq2b5bi" path="res://Sprites/spaceShips_006.png" id="2_pom4n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hbfs3"]
+radius = 29.0172
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8f7ym"]
+radius = 29.0172
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_71h8m"]
+radius = 54.1479
+
+[node name="Planet" type="Node2D"]
+position = Vector2(576, 324)
+
+[node name="Nave" type="CharacterBody2D" parent="."]
+rotation = 6.30937
+scale = Vector2(0.6, 0.6)
+script = ExtResource("2_8qytw")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nave"]
+position = Vector2(0, 133.63)
+scale = Vector2(0.304878, 0.304878)
+texture = ExtResource("2_pom4n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nave"]
+position = Vector2(0, 133.63)
+shape = SubResource("CircleShape2D_hbfs3")
+
+[node name="Area2D" type="Area2D" parent="Nave"]
+position = Vector2(0, 133.63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nave/Area2D"]
+position = Vector2(0, 0.369995)
+shape = SubResource("CircleShape2D_8f7ym")
+
+[node name="Planet" type="StaticBody2D" parent="."]
+
+[node name="Planet" type="Sprite2D" parent="Planet"]
+scale = Vector2(0.107813, 0.107813)
+texture = ExtResource("1_i08ip")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Planet"]
+shape = SubResource("CircleShape2D_71h8m")

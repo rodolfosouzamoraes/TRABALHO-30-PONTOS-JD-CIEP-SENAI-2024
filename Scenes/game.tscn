@@ -1,0 +1,86 @@
+[gd_scene load_steps=11 format=3 uid="uid://ccfxbvoinip78"]
+
+[ext_resource type="Script" path="res://Scripts/Game.cs" id="1_536e6"]
+[ext_resource type="Texture2D" uid="uid://d0ykj8q800wep" path="res://Sprites/Counter.png" id="1_bc1p7"]
+[ext_resource type="Texture2D" uid="uid://dtl47exy2tdna" path="res://Sprites/DD-Space-Background-77090-Preview.jpg" id="1_cl8yj"]
+[ext_resource type="Texture2D" uid="uid://b0paxh2r11ccd" path="res://Sprites/formato-de-coracao.png" id="2_8rryg"]
+[ext_resource type="PackedScene" uid="uid://duotu5f2xirjr" path="res://Prefabs/planet.tscn" id="2_n7rnu"]
+[ext_resource type="Script" path="res://Scripts/InstantiateEnemy.cs" id="3_8otcu"]
+[ext_resource type="FontFile" uid="uid://cfyoswuxnyami" path="res://Fonts/ka1.ttf" id="3_slal0"]
+[ext_resource type="Texture2D" uid="uid://120e08wwnlfy" path="res://Sprites/planet03.png" id="4_06dta"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rbq7t"]
+bg_color = Color(0.239216, 0.529412, 0.364706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lsjst"]
+bg_color = Color(0.262745, 0.87451, 0.407843, 1)
+
+[node name="Game" type="Node"]
+script = ExtResource("1_536e6")
+metadata/_edit_horizontal_guides_ = [5.0, 36.0]
+metadata/_edit_vertical_guides_ = [576.0]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hearts" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(61, 36)
+scale = Vector2(1.1781, 0.696078)
+texture = ExtResource("1_bc1p7")
+
+[node name="heart1" type="Sprite2D" parent="CanvasLayer/Hearts"]
+position = Vector2(-9.45354, -4)
+scale = Vector2(0.133864, 0.226563)
+texture = ExtResource("2_8rryg")
+
+[node name="heart2" type="Sprite2D" parent="CanvasLayer/Hearts"]
+position = Vector2(28.9515, -4)
+scale = Vector2(0.133864, 0.226563)
+texture = ExtResource("2_8rryg")
+
+[node name="heart3" type="Sprite2D" parent="CanvasLayer/Hearts"]
+position = Vector2(67.3565, -4)
+scale = Vector2(0.133864, 0.226563)
+texture = ExtResource("2_8rryg")
+
+[node name="ScoreImg" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(1090, 30)
+rotation = -3.14159
+scale = Vector2(1.1781, 0.696078)
+texture = ExtResource("1_bc1p7")
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+offset_left = 986.0
+offset_top = 6.0
+offset_right = 1121.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("3_slal0")
+theme_override_font_sizes/font_size = 17
+text = "999999999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlanetLife" type="ProgressBar" parent="CanvasLayer"]
+offset_left = 344.0
+offset_top = 17.0
+offset_right = 807.0
+offset_bottom = 56.0
+theme_override_styles/background = SubResource("StyleBoxFlat_rbq7t")
+theme_override_styles/fill = SubResource("StyleBoxFlat_lsjst")
+value = 24.99
+show_percentage = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(334, 36)
+scale = Vector2(0.0453125, 0.0453125)
+texture = ExtResource("4_06dta")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(589, 368)
+scale = Vector2(1.08654, 1.08654)
+texture = ExtResource("1_cl8yj")
+
+[node name="Planet" parent="." instance=ExtResource("2_n7rnu")]
+
+[node name="InstantiateEnemy" type="Node2D" parent="."]
+position = Vector2(576, 324)
+script = ExtResource("3_8otcu")

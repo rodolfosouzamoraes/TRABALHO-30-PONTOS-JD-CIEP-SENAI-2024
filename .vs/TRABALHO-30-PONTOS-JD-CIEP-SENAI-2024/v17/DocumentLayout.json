@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\instantiateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\instantiateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "script.cs",
-              "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\script.cs",
-              "RelativeDocumentMoniker": "script.cs",
-              "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\script.cs",
-              "RelativeToolTip": "script.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Game.cs",
+              "RelativeDocumentMoniker": "Scripts\\Game.cs",
+              "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Game.cs",
+              "RelativeToolTip": "Scripts\\Game.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvx0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:07:13.558Z",
+              "WhenOpened": "2024-05-19T23:07:13.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InstantiateEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\InstantiateEnemy.cs",
+              "RelativeDocumentMoniker": "Scripts\\InstantiateEnemy.cs",
+              "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\InstantiateEnemy.cs",
+              "RelativeToolTip": "Scripts\\InstantiateEnemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:26:09.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Scripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Scripts\\Enemy.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:18:59.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Nave.cs",
+              "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Nave.cs",
+              "RelativeDocumentMoniker": "Scripts\\Nave.cs",
+              "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Nave.cs",
+              "RelativeToolTip": "Scripts\\Nave.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwBwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T18:27:48.119Z",
               "EditorCaption": ""
             }
           ]

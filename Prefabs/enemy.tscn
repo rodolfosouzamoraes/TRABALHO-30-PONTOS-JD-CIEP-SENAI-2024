@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cyy385fnidp6f"]
+
+[ext_resource type="Script" path="res://Scripts/Enemy.cs" id="1_ri0w4"]
+[ext_resource type="Texture2D" uid="uid://8khfg1ienu0x" path="res://Sprites/spaceShips_002.png" id="2_l3rsb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5hho8"]
+radius = 18.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_njv7e"]
+radius = 18.0
+
+[node name="Enemy" type="Node2D"]
+position = Vector2(576, 324)
+
+[node name="BodyEnemy" type="StaticBody2D" parent="."]
+position = Vector2(0, 714)
+script = ExtResource("1_ri0w4")
+
+[node name="Sprite2D" type="Sprite2D" parent="BodyEnemy"]
+rotation = 3.14159
+scale = Vector2(0.132077, 0.132077)
+texture = ExtResource("2_l3rsb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BodyEnemy"]
+shape = SubResource("CircleShape2D_5hho8")
+
+[node name="Area2D" type="Area2D" parent="BodyEnemy"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BodyEnemy/Area2D"]
+shape = SubResource("CircleShape2D_njv7e")
+
+[connection signal="body_entered" from="BodyEnemy/Area2D" to="BodyEnemy" method="OnNode2DAreaEntered"]
