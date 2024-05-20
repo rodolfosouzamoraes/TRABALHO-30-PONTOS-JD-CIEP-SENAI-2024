@@ -7,7 +7,7 @@ public partial class InstantiateEnemy : Node2D
 
     Timer timer;
     bool isInstantiate = false;
-    double waitTimerInstantiate = 0.75;
+    double waitTimerInstantiate = 0.5;
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
 	{

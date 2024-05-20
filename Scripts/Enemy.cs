@@ -14,7 +14,7 @@ public partial class Enemy : StaticBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-        Vector2 velocity = new Vector2(0, 100 * (float)delta).Rotated(Rotation);
+        Vector2 velocity = new Vector2(0, 150 * (float)delta).Rotated(Rotation);
         Position -= velocity;
     }
 
@@ -23,11 +23,7 @@ public partial class Enemy : StaticBody2D
         switch (area.Name)
         {
             case "LaserBody":
-                enemyLife -= 25;
-                if (enemyLife <= 0)
-                {
-                    QueueFree();
-                }
+                QueueFree();
                 break;
             case "Nave":
                 game.DecrementLife();

@@ -11,7 +11,7 @@ public partial class Game : Node
     int lifePlayer = 3;
 
     ProgressBar lifePlanetBar;
-    int lifePlanetMax = 1000;
+    int lifePlanetMax = 500;
     int lifePlanetNow;
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
