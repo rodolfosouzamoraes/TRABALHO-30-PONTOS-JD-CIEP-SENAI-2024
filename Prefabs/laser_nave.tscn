@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnlkq3k5tdcdd"]
+
+[ext_resource type="Script" path="res://Scripts/LaserNave.cs" id="1_rnhvt"]
+[ext_resource type="Texture2D" uid="uid://dogovuwbkfuvq" path="res://Sprites/laserBlue06.png" id="2_eiwrw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_er122"]
+radius = 3.0
+height = 18.0
+
+[node name="LaserNave" type="Node2D"]
+position = Vector2(576, 324)
+script = ExtResource("1_rnhvt")
+
+[node name="LaserNave" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LaserNave"]
+position = Vector2(0, 113)
+shape = SubResource("CapsuleShape2D_er122")
+
+[node name="Sprite2D" type="Sprite2D" parent="LaserNave"]
+position = Vector2(0, 113)
+scale = Vector2(0.461538, 0.486486)
+texture = ExtResource("2_eiwrw")

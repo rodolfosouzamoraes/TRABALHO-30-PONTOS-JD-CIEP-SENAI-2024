@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ccfxbvoinip78"]
+[gd_scene load_steps=12 format=3 uid="uid://ccfxbvoinip78"]
 
 [ext_resource type="Script" path="res://Scripts/Game.cs" id="1_536e6"]
 [ext_resource type="Texture2D" uid="uid://d0ykj8q800wep" path="res://Sprites/Counter.png" id="1_bc1p7"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://Scripts/InstantiateEnemy.cs" id="3_8otcu"]
 [ext_resource type="FontFile" uid="uid://cfyoswuxnyami" path="res://Fonts/ka1.ttf" id="3_slal0"]
 [ext_resource type="Texture2D" uid="uid://120e08wwnlfy" path="res://Sprites/planet03.png" id="4_06dta"]
+[ext_resource type="Texture2D" uid="uid://cyroybl4bb5fs" path="res://Sprites/background.png" id="6_fgx6p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rbq7t"]
 bg_color = Color(0.239216, 0.529412, 0.364706, 1)
@@ -74,7 +75,70 @@ position = Vector2(334, 36)
 scale = Vector2(0.0453125, 0.0453125)
 texture = ExtResource("4_06dta")
 
+[node name="GameOver" type="Node2D" parent="CanvasLayer"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="CanvasLayer/GameOver"]
+position = Vector2(576, 324)
+scale = Vector2(2.29297, 1.32813)
+texture = ExtResource("6_fgx6p")
+
+[node name="Label" type="Label" parent="CanvasLayer/GameOver"]
+offset_left = 190.0
+offset_top = 105.0
+offset_right = 961.0
+offset_bottom = 218.0
+theme_override_fonts/font = ExtResource("3_slal0")
+theme_override_font_sizes/font_size = 100
+text = "Game Over!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/GameOver"]
+offset_left = 426.0
+offset_top = 268.0
+offset_right = 725.0
+offset_bottom = 308.0
+theme_override_fonts/font = ExtResource("3_slal0")
+theme_override_font_sizes/font_size = 35
+text = "Score Final"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/GameOver"]
+offset_left = 356.0
+offset_top = 318.0
+offset_right = 796.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_slal0")
+theme_override_font_sizes/font_size = 50
+text = "9999999999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btnTryAgain" type="Button" parent="CanvasLayer/GameOver"]
+offset_left = 392.0
+offset_top = 444.0
+offset_right = 759.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 1, 0.490196, 1)
+theme_override_fonts/font = ExtResource("3_slal0")
+theme_override_font_sizes/font_size = 26
+text = "Jogar Novamente"
+
+[node name="btnExit" type="Button" parent="CanvasLayer/GameOver"]
+offset_left = 514.0
+offset_top = 545.0
+offset_right = 637.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(1, 0.388235, 0.490196, 1)
+theme_override_fonts/font = ExtResource("3_slal0")
+theme_override_font_sizes/font_size = 16
+text = "Sair"
+
 [node name="Background" type="Sprite2D" parent="."]
+z_index = -5
 position = Vector2(589, 368)
 scale = Vector2(1.08654, 1.08654)
 texture = ExtResource("1_cl8yj")
@@ -84,3 +148,6 @@ texture = ExtResource("1_cl8yj")
 [node name="InstantiateEnemy" type="Node2D" parent="."]
 position = Vector2(576, 324)
 script = ExtResource("3_8otcu")
+
+[connection signal="pressed" from="CanvasLayer/GameOver/btnTryAgain" to="." method="TryAgain"]
+[connection signal="pressed" from="CanvasLayer/GameOver/btnExit" to="." method="ExitGame"]

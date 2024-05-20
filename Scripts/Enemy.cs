@@ -3,7 +3,7 @@ using System;
 
 public partial class Enemy : StaticBody2D
 {
-    float enemyLife = 100;
+    [Export] PackedScene explosion = ResourceLoader.Load<PackedScene>("res://Prefabs/explosion.tscn");
     Game game;
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -14,7 +14,7 @@ public partial class Enemy : StaticBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-        Vector2 velocity = new Vector2(0, 100 * (float)delta).Rotated(Rotation);
+        Vector2 velocity = new Vector2(0, 150 * (float)delta).Rotated(Rotation);
         Position -= velocity;
     }
 
@@ -22,21 +22,27 @@ public partial class Enemy : StaticBody2D
     {
         switch (area.Name)
         {
-            case "LaserBody":
-                enemyLife -= 25;
-                if (enemyLife <= 0)
-                {
-                    QueueFree();
-                }
+            case "LaserNave":
+                area.QueueFree();
+                game.IncrementScore(250);
+                Explosion();
                 break;
             case "Nave":
                 game.DecrementLife();
-                QueueFree();
+                Explosion();
                 break;
             case "Planet":
                 game.DecrementLifePlanet(25);
-                QueueFree();
+                Explosion();
                 break;
         }
+    }
+
+    public void Explosion()
+    {
+        Node explosionNode = explosion.Instantiate();
+        GetParent().AddChild(explosionNode);
+        explosionNode.GetNode<Node2D>(explosionNode.GetPath()).Position = new Vector2(Position.X, Position.Y);
+        QueueFree();
     }
 }

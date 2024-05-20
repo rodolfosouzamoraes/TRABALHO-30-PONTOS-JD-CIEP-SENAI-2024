@@ -11,8 +11,14 @@ public partial class Game : Node
     int lifePlayer = 3;
 
     ProgressBar lifePlanetBar;
-    int lifePlanetMax = 1000;
+    int lifePlanetMax = 500;
     int lifePlanetNow;
+
+    Node2D gameOverNode;
+    Label scoreFinal;
+    int scoreBestTotal;
+
+    Nave nave;
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
 	{
@@ -28,6 +34,12 @@ public partial class Game : Node
         lifePlanetBar.MaxValue = lifePlanetMax;
         lifePlanetNow = lifePlanetMax;
         lifePlanetBar.Value = lifePlanetNow;
+
+        nave = GetNode<Nave>("Planet/Nave");
+
+        gameOverNode = GetNode<Node2D>("CanvasLayer/GameOver");
+        scoreFinal = GetNode<Label>("CanvasLayer/GameOver/Label3");
+        gameOverNode.Hide();
     }
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -50,14 +62,43 @@ public partial class Game : Node
                 lifeOn1.Hide();
                 break;
             default:
-                //ShowGameOver();
+                nave.Explosion();
+                ShowGameOver();
                 break;
         }
     }
 
     public void DecrementLifePlanet(int value)
     {
+        if (lifePlanetNow <= 0) return;
         lifePlanetNow -= value;
         lifePlanetBar.Value = lifePlanetNow;
+        if(lifePlanetNow <= 0)
+        {
+            nave.Explosion();
+            ShowGameOver();
+        }
+    }
+
+    public void IncrementScore(int points)
+    {
+        scoreTotal += points;
+        score.Text = scoreTotal.ToString();
+    }
+
+    private void ShowGameOver()
+    {
+        scoreFinal.Text = scoreTotal.ToString();
+        gameOverNode.Show();
+    }
+
+    public void TryAgain()
+    {
+        GetTree().ReloadCurrentScene();
+    }
+
+    public void ExitGame()
+    {
+        GetTree().Quit();
     }
 }

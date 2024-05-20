@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\explosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\explosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\LaserNave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\LaserNave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\instantiateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\instantiateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|c:\\users\\rod_s\\documents\\trabalho-30-pontos-jd-ciep-senai-2024\\scripts\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC576F6-FD96-4244-BBD9-1742F41A2301}|trabalho-30-pontos-jd-ciep-senai-2024.csproj|solutionrelative:scripts\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Explosion.cs",
+              "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Explosion.cs",
+              "RelativeDocumentMoniker": "Scripts\\Explosion.cs",
+              "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Explosion.cs",
+              "RelativeToolTip": "Scripts\\Explosion.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T23:59:59.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LaserNave.cs",
+              "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\LaserNave.cs",
+              "RelativeDocumentMoniker": "Scripts\\LaserNave.cs",
+              "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\LaserNave.cs",
+              "RelativeToolTip": "Scripts\\LaserNave.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T23:31:55.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,46 +74,46 @@
               "RelativeDocumentMoniker": "Scripts\\Game.cs",
               "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Game.cs",
               "RelativeToolTip": "Scripts\\Game.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAADwvx0AAAAsAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T23:07:13.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "InstantiateEnemy.cs",
               "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\InstantiateEnemy.cs",
               "RelativeDocumentMoniker": "Scripts\\InstantiateEnemy.cs",
               "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\InstantiateEnemy.cs",
               "RelativeToolTip": "Scripts\\InstantiateEnemy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T22:26:09.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Enemy.cs",
               "RelativeDocumentMoniker": "Scripts\\Enemy.cs",
               "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Enemy.cs",
               "RelativeToolTip": "Scripts\\Enemy.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwB4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T22:18:59.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Nave.cs",
               "DocumentMoniker": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Nave.cs",
               "RelativeDocumentMoniker": "Scripts\\Nave.cs",
               "ToolTip": "C:\\Users\\rod_s\\Documents\\trabalho-30-pontos-jd-ciep-senai-2024\\Scripts\\Nave.cs",
               "RelativeToolTip": "Scripts\\Nave.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAiwBwAAAAeAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwEwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T18:27:48.119Z",
               "EditorCaption": ""

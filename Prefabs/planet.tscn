@@ -17,7 +17,6 @@ radius = 54.1479
 position = Vector2(576, 324)
 
 [node name="Nave" type="CharacterBody2D" parent="."]
-rotation = 6.30937
 scale = Vector2(0.6, 0.6)
 script = ExtResource("2_8qytw")
 
